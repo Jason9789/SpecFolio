@@ -5,7 +5,16 @@ module.exports = {
     node: true,
   },
 
-  extends: ['airbnb-base', 'plugin:react/recommended', 'prettier'],
+  ecmaFeatures: {
+    jsx: true,
+  },
+
+  extends: [
+    'airbnb-base',
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'prettier',
+  ],
 
   rules: {
     'react/react-in-jsx-scope': 'off',
